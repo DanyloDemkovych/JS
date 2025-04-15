@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900");
+body {
+  background-color: #0f0f0f;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#header {
+  z-index: 999999;
+  position: fixed;
+  background: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: #ff9d65 3px 3px 5px;
+          box-shadow: #ff9d65 3px 3px 5px;
+}
+
+#logo {
+  width: 150px;
+  height: 48px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+  margin-right: 50%;
+  font-size: 12pt;
+  margin: auto;
+}
+
+ul {
+  background: #222222;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  width: 7vw;
+  height: 2vh;
+  color: #ff9d65;
+  background: #222222;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+li a {
+  color: #ff9d65;
+}
+
+li:hover a {
+  color: white;
+}
+
+li:hover {
+  background: #ff9d65;
+  cursor: pointer;
+  color: white;
+}
+
+ul li ul {
+  background: #222222;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  color: white;
+}
+
+ul li ul li {
+  clear: both;
+  width: 7vw;
+  height: 3vh;
+}
+
+#socialNets {
+  width: 30px;
+}
+
+.socialNets {
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/*# sourceMappingURL=order.css.map */
+.orderhouse {
+  background-color: black;
+  color: #a3684e;
+  padding: 10px 30px;
+  width: 600px;
+  text-decoration: none;
+  text-align: center;
+  margin: 1px auto;
+  display: block;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #bd7d62), to(#bd7d62));
+  background-image: linear-gradient(to left, transparent, transparent 50%, #bd7d62 50%, #bd7d62);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+  font: 400 18px tahoma;
+  border: 5px solid #bd7d62;
+}
+
+.orderhouse:hover {
+  background-position: 0 0;
+  color: black;
+}
+.info{
+  background: #222222;
+  color: #bd7d62;
+  position: absolute;
+  top: 96%;
+  left: 0%;
+  
+  width: 102%;
+  height: 80px;
+  font-size: 15px;
+}
+.infotext{
+  color: #bd7d62;
+  font-size: 16px;
+  
+}

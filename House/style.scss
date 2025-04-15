@@ -1,0 +1,29 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+form{
+    width: 400px;
+    background: white;
+    box-shadow:  rgb(255, 157, 101) 2px 2px 3px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+    text-align: center;
+}
+div{
+    align-self: flex-start;
+}
+button{
+    background: black;
+    color: white;
+    &:disabled {
+        background: rgb(61, 61, 61);
+    }
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
+$primaryColor: #f4d6b4;
+#socialNets {
+  width: 30px;
+}
+.socialNets{
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body{
+    background-color: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#header{
+    z-index: 999999;
+    position: fixed;
+    background: #222222;
+    display: flex;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+#logo{
+    width: 150px;
+    height: 48px;
+}
+a{
+    text-decoration: none;
+  }
+nav{
+    font-family: monospace;
+    font-size: 12pt;
+    margin:auto;
+  }
+  
+ul{
+    background: #222222;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+li{
+    width: 7vw;
+    height: 2vh;
+    color: rgb(255, 157, 101);
+    background: #222222;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+li a {
+    color: rgb(255, 157, 101);
+}
+li:hover{
+    a{
+    color: white;
+    }
+}
+li:hover {
+    background: rgb(255, 157, 101);
+    cursor: pointer;
+    color: white;
+}
+  
+ul li ul {
+    background: #222222;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+  
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    color: white;
+}
+  
+ul li ul li {
+    clear: both;
+    width: 7vw;
+    height: 3vh;
+}
+a.buttonClick{
+    color:#bd7d62;
+    padding: 10px 20px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+    margin:20px auto;
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#bd7d62 50%,#bd7d62);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    font: 400 18px tahoma;
+    border: 5px solid #bd7d62;
+    }
+       a.buttonClick:hover {
+       background-position: 0 0;
+       color:black;
+       }
+       #content{
+           display: flex;
+           flex-direction: column;
+       }
+       .build{
+           display: flex;
+           flex-direction: row;
+           background-color: #ffbf77;
+           width: 80%;
+           height: auto;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 5%;
+           padding: 5%;
+           border-radius: 5px;
+           
+       }
+       .build:hover{
+        .buildImg{
+            filter: sepia(0%);
+        }
+       }
+       .buildImg{
+           width: 40%;
+           height: 100%;
+           border: 5px solid black;
+           border-radius: 5px;
+           filter: sepia(100%);
+           transition: 1s;
+       }
+       .text{
+           display: flex;
+           flex-direction: column;
+           margin-left: auto;
+       }
+       .info{
+           margin: 0 auto ;
+           font-size: 125%;
+           width: 70%;
+           height: 70%;
+           background: #d3985a;
+           border-radius: 5px;
+           text-align: center;
+           font-family: 'Times New Roman', Times, serif;
+           padding: 5%;
+       }
+       dialog{
+         background: #ffc98c;
+         border-radius: 5px;
+         border: none;
+       }
+       
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#close{
+  align-self: center;
+  
+  border: none;
+  background: #bd7d62;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}

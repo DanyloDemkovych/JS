@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="photos/hotel3.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Night House</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="index.js">
+</head>
+
+<body>
+    <div id="header">
+        <nav role="navigation">
+            <ul>
+
+                <a href="index.html">
+                    <li class="point">Main page</li>
+                </a>
+                <a href="#">
+                    <li class="point">See a flat
+                </a>
+                <ul>
+                    <a href="house1.html">
+                        <li class="house">Blue Lagoon</li>
+                    </a>
+                    <a href="house2.html">
+                        <li class="house">Adam's House</li>
+                    </a>
+                    <a href="house3.html">
+                        <li class="house">Bluebell</li>
+                    </a>
+                </ul>
+                </li>
+                <li class="point"><a href="order.html">Order call</a></li>
+                <a href="about.html">
+                    <li class="point">About us</li>
+                </a>
+                <a href="index.html">
+                <img id="logo" src="photos/logoForSite.png">
+            </a>
+            </ul>
+        </nav>
+        <div class="socialNets">
+            <a href="https://www.facebook.com/"><img id="socialNets" src="photos/facebookLogo.png"></a>
+            <a href="https://www.instagram.com/"><img id="socialNets" src="photos/instagramLogo.png"></a>
+        </div>
+    </div>
+    <div class="content">
+        <form id="f-main" action="table.html" onchange="isAvailable()">
+            <h1>Order call.</h1>
+            <h5>Please fill out this form to continue.</h5>
+            <input type="name" placeholder="Name" checked="true" name="name" />
+            <input type="surname" placeholder="Surname" checked="true" name="surname" />
+            <input type="email" placeholder="Email" checked="true" name="email" />
+            <input type="number" placeholder="Number" checked="true" name="number" />
+            
+        </form>
+        <button class="orderhouse" >send -></button>
+        <div class="info">
+
+            <h5 class="infotext">+380975555555</h5>
+            <h4 class="infotext">Night House Comunity</h4>
+    
+    
+        </div>
+    </div>
+
+</body>
+
+</html>
